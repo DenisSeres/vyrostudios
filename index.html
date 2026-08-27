@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050506">
+  <meta name="description" content="VYRO Studios creates video edits, photo edits, thumbnails, motion design, visual effects and creative visual content.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VYRO Studios | Creative Editing & Visual Design">
+  <meta property="og:description" content="Creative editing and visual design by VYRO Studios.">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="assets/images/og-image.webp">
+  <link rel="canonical" href="https://example.com/">
+  <link rel="icon" type="image/jpeg" href="assets/icons/icon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>VYRO Studios | Creative Editing & Visual Design</title>
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#app">Skip to content</a>
+  <div class="cursor cursor-dot" aria-hidden="true"></div>
+  <div class="cursor cursor-ring" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand magnetic" href="#home" data-route="home" aria-label="VYRO Studios home">
+        <span>VYRO</span><small>Studios</small>
+      </a>
+      <div class="nav-links" id="desktop-nav">
+        <a href="#work" data-route="work">Work</a>
+        <a href="#about" data-route="about">About</a>
+        <a href="#services" data-route="services">Services</a>
+        <a href="#skills" data-route="skills">Skills</a>
+        <a href="#contact" data-route="contact">Contact</a>
+      </div>
+      <a class="nav-cta magnetic" href="#order" data-route="order">Order <span>↗</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-inner shell">
+        <p class="eyebrow">Navigation</p>
+        <a href="#home" data-route="home"><span>Home</span><b>00</b></a>
+        <a href="#work" data-route="work"><span>Work</span><b>01</b></a>
+        <a href="#about" data-route="about"><span>About</span><b>02</b></a>
+        <a href="#services" data-route="services"><span>Services</span><b>03</b></a>
+        <a href="#skills" data-route="skills"><span>Skills</span><b>04</b></a>
+        <a href="#contact" data-route="contact"><span>Contact</span><b>05</b></a>
+        <a href="#order" data-route="order"><span>Order</span><b>06</b></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <div class="route-view" data-view="home">
+      <section class="hero page-section" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-scanline" aria-hidden="true"></div>
+        <div class="hero-orb orb-one" aria-hidden="true"></div>
+        <div class="hero-orb orb-two" aria-hidden="true"></div>
+        <div class="hero-orb orb-three" aria-hidden="true"></div>
+        <div class="hero-cross cross-a" aria-hidden="true"></div><div class="hero-cross cross-b" aria-hidden="true"></div>
+        <div class="shell hero-inner">
+          <div class="hero-kicker reveal-up"><span class="status-dot"></span><span>Creative Editing & Visual Design Studio</span><span class="kicker-line"></span><span>01 / 06</span></div>
+          <h1 id="hero-title" class="hero-title">
+            <span class="hero-word reveal-word">VYRO</span>
+            <span class="hero-word outline reveal-word delay-1">STUDIOS</span>
+          </h1>
+          <div class="hero-content reveal-up delay-2">
+            <div><p class="hero-tagline">VISUALS THAT MOVE.</p><p class="hero-copy">We turn raw footage, images and ideas into visuals built to be remembered.</p></div>
+            <div class="hero-actions"><a class="button button-primary magnetic" href="#work" data-route="work">View work <span>↘</span></a><a class="button button-ghost magnetic" href="#order" data-route="order">Start a project <span>↗</span></a></div>
+          </div>
+          <div class="hero-meta reveal-up delay-3"><span>VIDEO</span><i></i><span>PHOTO</span><i></i><span>THUMBNAILS</span><i></i><span>MOTION</span><i></i><span>VFX</span><i></i><span>COLOR</span><i></i><span>DESIGN</span></div>
+          <div class="hero-corner reveal-up delay-4"><span>VYRO / 2026</span><span>CREATIVE SYSTEM</span></div>
+        </div>
+        <div class="scroll-cue"><span>Explore</span><i></i></div>
+      </section>
+    </div>
+
+    <div class="route-view" data-view="work" hidden>
+      <section class="page-section inner-page work-section" aria-labelledby="work-title">
+        <div class="shell">
+          <div class="page-hero reveal-up"><div><p class="eyebrow">01 / Selected work</p><h1 id="work-title">SELECTED <em>WORK</em></h1></div><p class="page-intro">A curated collection of visual work, edits, designs and creative experiments. Every project is presented as a high-resolution image.</p></div>
+          <div class="filter-row reveal-up delay-1" role="toolbar" aria-label="Portfolio filters" id="portfolio-filters"></div>
+          <div class="portfolio-grid" id="portfolio-grid" aria-live="polite"></div>
+          <p class="empty-state" id="portfolio-empty" hidden>No projects match this category yet.</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="route-view" data-view="about" hidden>
+      <section class="page-section inner-page about-section" aria-labelledby="about-title">
+        <div class="shell about-grid">
+          <div class="page-hero compact reveal-up"><p class="eyebrow">02 / About</p><h1 id="about-title">ABOUT <em>VYRO</em></h1><div class="about-index">02<span></span>06</div></div>
+          <div class="about-content"><p class="mega-copy reveal-up delay-1">A creative project built around <strong>editing</strong>, visual design, motion, VFX, color and constant experimentation.</p><div class="about-columns"><div class="about-copy reveal-up delay-2"><p>From raw footage to finished visuals, the goal is simple: make every frame intentional. VYRO Studios explores storytelling, visual quality and creative growth without pretending the work is finished before it exists.</p><p class="founder">Founded by <strong>Denis</strong></p></div><div class="vision reveal-up delay-3"><p class="eyebrow">The Vision</p><ul id="vision-list"></ul></div></div></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="route-view" data-view="services" hidden>
+      <section class="page-section inner-page services-section" aria-labelledby="services-title">
+        <div class="shell"><div class="page-hero reveal-up"><div><p class="eyebrow">03 / Capabilities</p><h1 id="services-title">WHAT WE <em>DO</em></h1></div><p class="page-intro">A focused creative toolkit for video, image, motion, sound and visual content.</p></div><div class="services-list" id="services-list"></div></div>
+      </section>
+    </div>
+
+    <div class="route-view" data-view="skills" hidden>
+      <section class="page-section inner-page skills-section" aria-labelledby="skills-title">
+        <div class="shell"><div class="page-hero reveal-up"><div><p class="eyebrow">04 / Toolkit</p><h1 id="skills-title">TOOLS & <em>SKILLS</em></h1></div><p class="page-intro">Creative tools and disciplines currently used across the VYRO workflow.</p></div><div class="skills-feature reveal-up delay-1"><div class="skills-feature-label">PRIMARY EDITING TOOL</div><div class="skills-feature-name">DaVinci <em>Resolve</em></div><div class="skills-feature-level">ADVANCED</div></div><div class="skills-grid" id="skills-grid"></div></div>
+      </section>
+    </div>
+
+    <div class="route-view" data-view="order" hidden>
+      <section class="page-section inner-page order-section" aria-labelledby="order-title">
+        <div class="shell">
+          <div class="page-hero reveal-up"><div><p class="eyebrow">06 / Project request</p><h1 id="order-title">START A <em>PROJECT</em></h1></div><p class="page-intro">Tell VYRO Studios what you want to create. Your request will be delivered directly to the studio.</p></div>
+          <div class="order-layout">
+            <div class="order-intro reveal-up delay-1"><span class="order-mark">VYRO / ORDER</span><p>Every project starts with a clear brief. Give us the essentials and we’ll have everything needed to understand the direction.</p><div class="order-steps" aria-hidden="true"><span>01</span><span>02</span><span>03</span><span>04</span></div></div>
+            <form class="order-form reveal-up delay-2" id="order-form" novalidate>
+              <input type="hidden" name="_subject" value="New VYRO Studios Project Request">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="true">
+              <input type="hidden" name="_url" id="order-url" value="">
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="honeypot" aria-hidden="true">
+              <div class="form-grid">
+                <label class="field"><span>Name <b>*</b></span><input name="name" type="text" autocomplete="name" required maxlength="100" placeholder="Your name"></label>
+                <label class="field"><span>Email <b>*</b></span><input name="email" type="email" autocomplete="email" required maxlength="160" placeholder="you@example.com"></label>
+                <label class="field"><span>Phone number <b>*</b></span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="30" placeholder="07xx xxx xxx"></label>
+                <label class="field"><span>Service <b>*</b></span><select name="service" required><option value="" selected disabled>Select a service</option><option>Video Editing</option><option>Photo Editing</option><option>Thumbnail Design</option><option>Motion Design</option><option>Graphic Design</option><option>Visual Effects / VFX</option><option>Color Grading</option><option>Sound Design</option><option>Social Media Content</option><option>Other</option></select></label>
+                <label class="field"><span>Deadline <b>*</b></span><input name="deadline" type="date" required></label>
+                <label class="field"><span>Budget <b>*</b></span><input name="budget" type="text" required maxlength="80" placeholder="e.g. 50 EUR"></label>
+                <label class="field field-full"><span>Project description <b>*</b></span><textarea name="description" rows="6" required maxlength="3000" placeholder="Tell us what you want to create, what the final result should feel like, and anything important about the project."></textarea></label>
+                <label class="field field-full"><span>Additional information</span><textarea name="additional" rows="4" maxlength="2000" placeholder="References, platform, format, extra details..." ></textarea></label>
+              </div>
+              <div class="order-submit-row"><p>By submitting this request, you are sending the information directly to VYRO Studios.</p><button class="button button-primary magnetic" type="submit" id="order-submit">Order <span>↗</span></button></div>
+              <p class="form-status" id="order-status" role="status" aria-live="polite"></p>
+            </form>
+            <div class="order-success" id="order-success" hidden aria-live="polite"><span class="success-kicker">VYRO / 06</span><h2>REQUEST <em>DELIVERED.</em></h2><p>Your project request has been successfully delivered to VYRO Studios.</p><a class="button button-ghost magnetic" href="#home" data-route="home">Back home <span>↗</span></a></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="route-view" data-view="contact" hidden>
+      <section class="page-section inner-page contact-section" aria-labelledby="contact-title">
+        <div class="shell"><div class="contact-top reveal-up"><p class="eyebrow">05 / Contact</p><h1 id="contact-title">LET'S WORK <em>TOGETHER</em></h1><p>Have a project in mind? Let's create something worth watching.</p></div><div class="contact-grid" id="contact-grid"></div><div class="contact-order reveal-up"><p class="eyebrow">Have a project?</p><a class="button button-primary magnetic" href="#order" data-route="order">Start a project <span>↗</span></a></div><div class="contact-bottom reveal-up"><span>VYRO Studios</span><span>VISUALS THAT MOVE.</span><span>Founded by Denis</span></div></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="shell footer-inner"><a class="brand" href="#home" data-route="home"><span>VYRO</span><small>Studios</small></a><p>Creative Editing & Visual Design Studio</p><div class="footer-links"><a href="#work" data-route="work">Work</a><a href="#about" data-route="about">About</a><a href="#contact" data-route="contact">Contact</a><a href="#order" data-route="order">Order</a></div><small>© <span id="current-year"></span> VYRO Studios</small></div></footer>
+
+  <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-backdrop" data-close-modal></div><div class="modal-panel" role="document"><button class="modal-close" type="button" data-close-modal aria-label="Close project viewer">Close <span>×</span></button><div class="modal-media" id="modal-media"></div><div class="modal-info"><div><p class="eyebrow" id="modal-category"></p><h2 id="modal-title"></h2></div><div class="modal-meta" id="modal-meta"></div><div class="modal-description"><p class="eyebrow">About</p><p id="modal-description-text"></p></div></div></div></div>
+  <noscript><div class="noscript">Please enable JavaScript for the full VYRO Studios experience.</div></noscript>
+  <script src="app.js" defer></script>
+</body>
+</html>
